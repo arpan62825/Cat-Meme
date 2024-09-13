@@ -101,6 +101,12 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+input[type="checkbox"] {
+  width: 20px;
+  accent-color: #bd301d;
+  border-radius: 12%;
+}
+
 .gifs-check {
   display: flex;
   align-items: center;
@@ -129,9 +135,9 @@ input[type="radio"] {
   display: none;
   position: fixed;
   margin: auto;
-  top: 80px;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   border: 1px solid #67595e;
@@ -163,4 +169,26 @@ input[type="radio"] {
   color: white;
   background-color: #bd301d;
   border: 2px solid #bd301d;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+
+  .controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .meme-modal {
+    width: 95%;
+    height: 74%;
+    top: 55%;
+  }
+
+  .radio {
+    font-weight: 600;
+  }
 }
