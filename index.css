@@ -47,6 +47,7 @@ header {
 
 .pumpkin-img {
   width: 80px;
+  margin-right: 10px;
 }
 
 .controls-container {
@@ -102,7 +103,7 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] {
-  width: 20px;
+  width: 15px;
   accent-color: #bd301d;
   border-radius: 12%;
 }
@@ -179,13 +180,26 @@ input[type="checkbox"] {
   .controls-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
+  }
+
+  .gifs-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .gifs-check-label {
+    font-weight: 600;
   }
 
   .meme-modal {
     width: 95%;
     height: 74%;
-    top: 55%;
+    top: 50%;
   }
 
   .radio {
